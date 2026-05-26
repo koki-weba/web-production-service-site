@@ -1,2 +1,2 @@
-# -web-production-service-site
+# web-production-service-site
 Web制作サービス紹介サイト
