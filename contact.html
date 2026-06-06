@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="佐藤陽翔へのお問い合わせ。Webサイト制作の相談・お見積もりは無料です。">
+  <title>CONTACT | HARUTO Web Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-bg"></div>
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="loader-logo-text">HARUTO</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-percent" id="loaderPercent">0%</p>
+    </div>
+  </div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-text">HARUTO</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html"   class="nav-link">TOP</a></li>
+          <li><a href="works.html"   class="nav-link">WORKS</a></li>
+          <li><a href="service.html" class="nav-link">SERVICE</a></li>
+          <li><a href="skill.html"   class="nav-link">SKILL</a></li>
+          <li><a href="contact.html" class="nav-link nav-link--contact is-active">CONTACT</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html"   class="mobile-nav-link">TOP</a></li>
+      <li><a href="works.html"   class="mobile-nav-link">WORKS</a></li>
+      <li><a href="service.html" class="mobile-nav-link">SERVICE</a></li>
+      <li><a href="skill.html"   class="mobile-nav-link">SKILL</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="page-hero-geo"></div>
+      <div class="container">
+        <div class="page-hero-inner">
+          <p class="breadcrumb" id="breadcrumb">
+            <a href="index.html">TOP</a>
+            <span class="breadcrumb-sep">/</span>
+            <span class="breadcrumb-current">CONTACT</span>
+          </p>
+          <span class="page-hero-label">CONTACT</span>
+          <h1 class="page-hero-title">
+            <span class="page-hero-word" id="heroWord1">お</span>
+            <span class="page-hero-word page-hero-word--stroke" id="heroWord2">問い合わせ</span>
+          </h1>
+          <p class="page-hero-desc" id="heroDesc">
+            相談ベースでも構いません。<br>
+            お気軽にメッセージをお送りください。
+          </p>
+        </div>
+      </div>
+      <div class="page-hero-divider"></div>
+    </section>
+
+    <!-- ===== CONTACT MAIN ===== -->
+    <section class="section" style="background:var(--white);">
+      <div class="container">
+        <div class="contact-page-grid">
+
+          <!-- Info -->
+          <div class="reveal-left">
+            <div class="section-label-wrap" style="margin-bottom:32px;">
+              <span class="section-label">GET IN TOUCH</span>
+            </div>
+            <h2 style="font-size:clamp(24px,3vw,32px);font-weight:900;margin-bottom:16px;letter-spacing:-0.02em;">
+              まずは気軽に<br>ご連絡ください
+            </h2>
+            <p style="font-size:14px;line-height:1.9;color:rgba(255,255,255,0.6);margin-bottom:32px;">
+              Webサイト制作に関するご相談・お見積もりは<strong style="color:var(--primary);">完全無料</strong>です。<br>
+              「こんなサイトを作りたい」という段階でも大歓迎です。<br>
+              フォームの他、X(Twitter)のDMからもお気軽にどうぞ。
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method-card">
+                <div class="contact-method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <p class="contact-method-label">Email</p>
+                  <p class="contact-method-value">haruto@example.com</p>
+                </div>
+              </div>
+              <div class="contact-method-card">
+                <div class="contact-method-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </div>
+                <div>
+                  <p class="contact-method-label">X (Twitter)</p>
+                  <p class="contact-method-value">@haruto_web</p>
+                </div>
+              </div>
+              <div class="contact-method-card">
+                <div class="contact-method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-method-label">Location</p>
+                  <p class="contact-method-value">北海道 札幌市（全国対応可）</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-response-note">
+              <strong>返信について：</strong><br>
+              通常<strong>1〜2営業日以内</strong>にご返信いたします。<br>
+              お急ぎの場合はX(Twitter)のDMよりご連絡ください。
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="reveal-right">
+            <form class="contact-full-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname" class="form-label">お名前 <span class="required">*</span></label>
+                  <input type="text" id="fname" name="name" class="form-input" placeholder="山田 太郎" required>
+                </div>
+                <div class="form-group">
+                  <label for="fcompany" class="form-label">会社名・屋号</label>
+                  <input type="text" id="fcompany" name="company" class="form-input" placeholder="山田商店">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="femail" class="form-label">メールアドレス <span class="required">*</span></label>
+                <input type="email" id="femail" name="email" class="form-input" placeholder="example@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="fphone" class="form-label">電話番号</label>
+                <input type="tel" id="fphone" name="phone" class="form-input" placeholder="090-1234-5678">
+              </div>
+              <div class="form-group">
+                <label for="ftype" class="form-label">ご依頼内容 <span class="required">*</span></label>
+                <select id="ftype" name="type" class="form-input form-select" required>
+                  <option value="">選択してください</option>
+                  <option value="monitor">モニター価格（¥30,000）先着3名</option>
+                  <option value="standard">通常サイト（¥50,000〜）</option>
+                  <option value="large">大規模サイト（¥100,000〜）</option>
+                  <option value="renewal">サイトリニューアル（¥50,000〜）</option>
+                  <option value="consult">まずは相談したい</option>
+                  <option value="other">その他</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="fbudget" class="form-label">ご予算の目安</label>
+                <select id="fbudget" name="budget" class="form-input form-select">
+                  <option value="">選択してください</option>
+                  <option value="30k">〜30,000円</option>
+                  <option value="50k">〜50,000円</option>
+                  <option value="100k">〜100,000円</option>
+                  <option value="over100k">100,000円以上</option>
+                  <option value="discuss">要相談</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="fmessage" class="form-label">メッセージ <span class="required">*</span></label>
+                <textarea id="fmessage" name="message" class="form-input form-textarea" rows="6"
+                  placeholder="・どのようなサイトを作りたいか&#10;・参考にしたいサイトのURL&#10;・納期のご希望&#10;など、お気軽にご記入ください" required></textarea>
+              </div>
+              <div class="form-group">
+                <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;">
+                  <input type="checkbox" id="fagree" name="agree" required
+                    style="margin-top:3px;flex-shrink:0;accent-color:var(--primary);">
+                  <span style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6;">
+                    <a href="#" style="color:var(--accent);text-decoration:underline;">プライバシーポリシー</a>に同意する
+                  </span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full btn--lg magnetic" id="submitBtn">
+                <span class="btn-text">送信する</span>
+                <span class="btn-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                </span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT FAQ ===== -->
+    <section class="section contact-faq" style="background:var(--bg-alt);">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">よくある質問</h2>
+        </div>
+
+        <div class="faq-list reveal-up" id="faqList">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-question-text">Q. 相談だけでも問題ありませんか？</span>
+              <span class="faq-question-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                もちろん大歓迎です！「まだ依頼するか迷っている」「どのプランが自分に合うか分からない」という段階でも、お気軽にご相談ください。相談・見積もりは<strong>完全無料</strong>です。
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-question-text">Q. 返信にはどのくらいかかりますか？</span>
+              <span class="faq-question-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                通常<strong>1〜2営業日以内</strong>にご返信します。お急ぎの場合はX(Twitter)の<strong>DM</strong>が最も早くご対応できます。
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-question-text">Q. オンラインでの打ち合わせは可能ですか？</span>
+              <span class="faq-question-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Zoom・Google Meet・Discord等でのオンライン打ち合わせが可能です。全国どこからでもご依頼いただけます。札幌近郊の方は対面での打ち合わせも歓迎です。
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-question-text">Q. 急ぎの依頼にも対応できますか？</span>
+              <span class="faq-question-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                状況によって対応可能です。特急対応の場合は別途料金が発生する場合がありますが、まずはご相談ください。可能な限り柔軟に対応します。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <a href="#" class="back-to-top" id="backToTop" aria-label="トップへ戻る">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </a>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">HARUTO</span>
+          </a>
+          <p class="footer-brand-sub">佐藤 陽翔 / Sato Haruto</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">TOP</a>
+          <a href="works.html">WORKS</a>
+          <a href="service.html">SERVICE</a>
+          <a href="skill.html">SKILL</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="#" aria-label="X (Twitter)" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="GitHub" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sato Haruto. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

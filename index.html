@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="佐藤陽翔のポートフォリオ。個人店舗・小規模事業者様向けWebサイト制作。札幌在住の大学生Webクリエイター。">
+  <title>HARUTO | Web Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-bg"></div>
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="loader-logo-text">HARUTO</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-percent" id="loaderPercent">0%</p>
+    </div>
+  </div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-text">HARUTO</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html"   class="nav-link is-active">TOP</a></li>
+          <li><a href="works.html"   class="nav-link">WORKS</a></li>
+          <li><a href="service.html" class="nav-link">SERVICE</a></li>
+          <li><a href="skill.html"   class="nav-link">SKILL</a></li>
+          <li><a href="contact.html" class="nav-link nav-link--contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE MENU OVERLAY ===== -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html"   class="mobile-nav-link">TOP</a></li>
+      <li><a href="works.html"   class="mobile-nav-link">WORKS</a></li>
+      <li><a href="service.html" class="mobile-nav-link">SERVICE</a></li>
+      <li><a href="skill.html"   class="mobile-nav-link">SKILL</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+      <canvas id="heroCanvas" class="hero-canvas"></canvas>
+      <div class="hero-noise"></div>
+
+      <div class="hero-container">
+        <h1 class="hero-title" id="heroTitle">
+          <span class="hero-line">
+            <span class="hero-word">Web</span>
+          </span>
+          <span class="hero-line">
+            <span class="hero-word hero-word--stroke">Creator</span>
+          </span>
+          <span class="hero-line hero-line--sub">
+            <span class="hero-word">&amp;</span>
+            <span class="hero-word">Designer</span>
+          </span>
+        </h1>
+
+        <div class="hero-typewriter-wrap" id="heroTypewriterWrap">
+          <span id="typewriter" class="typewriter"></span><span class="typewriter-cursor">|</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-label-wrap reveal-up">
+          <span class="section-label">ABOUT</span>
+        </div>
+        <div class="about-grid">
+          <div class="about-visual reveal-left">
+            <div class="about-avatar-wrap">
+              <div class="about-avatar">
+                <span class="avatar-letter">H</span>
+                <div class="avatar-glow"></div>
+              </div>
+              <div class="about-ring about-ring--1"></div>
+              <div class="about-ring about-ring--2"></div>
+              <div class="about-ring about-ring--3"></div>
+              <div class="about-chip chip--location">
+                <span class="chip-icon">📍</span>
+                <span>北海道 札幌市</span>
+              </div>
+              <div class="about-chip chip--study">
+                <span class="chip-icon">🎓</span>
+                <span>大学生 / 20歳</span>
+              </div>
+              <div class="about-chip chip--work">
+                <span class="chip-icon">💼</span>
+                <span>フリーランス</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-body reveal-right">
+            <h2 class="about-heading">
+              <span class="about-greeting">こんにちは！</span>
+              <span class="about-name-ja">佐藤 陽翔</span>
+              <span class="about-name-en">Sato Haruto</span>
+            </h2>
+            <p class="about-text">
+              北海道・札幌在住の20歳、現役大学生Webクリエイターです。<br>
+              <strong>個人店舗・小規模事業者様</strong>を中心に、デザインからコーディングまでワンストップでお任せいただけます。
+            </p>
+            <p class="about-text">
+              「ただ作るだけでなく、ビジネスに貢献するサイトを」をモットーに、
+              クライアント様の想いを丁寧にヒアリングし、理想のWebサイトを実現します。
+            </p>
+            <div class="about-tags">
+              <span class="tag">UI / UX デザイン</span>
+              <span class="tag">フロントエンド</span>
+              <span class="tag">WordPress</span>
+              <span class="tag">レスポンシブ</span>
+              <span class="tag">SEO対策</span>
+              <span class="tag">サイト高速化</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WORKS PREVIEW ===== -->
+    <section class="works section" id="works">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">WORKS</span>
+          <h2 class="section-title">制作実績</h2>
+          <p class="section-desc">これまでに手がけた主な制作物</p>
+        </div>
+
+        <div class="works-grid">
+          <article class="work-card reveal-up" data-delay="0">
+            <div class="work-card-img" style="--grad: linear-gradient(135deg,#1d4ed8,#3b82f6)">
+              <span class="work-category">HP</span>
+              <div class="work-overlay">
+                <span class="work-view">VIEW →</span>
+              </div>
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-title">飲食店 コーポレートサイト</h3>
+              <div class="work-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card reveal-up" data-delay="100">
+            <div class="work-card-img" style="--grad: linear-gradient(135deg,#0369a1,#38bdf8)">
+              <span class="work-category">LP</span>
+              <div class="work-overlay">
+                <span class="work-view">VIEW →</span>
+              </div>
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-title">美容室 ランディングページ</h3>
+              <div class="work-tags">
+                <span>HTML</span><span>Sass</span><span>GSAP</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card reveal-up" data-delay="200">
+            <div class="work-card-img" style="--grad: linear-gradient(135deg,#1e40af,#60a5fa)">
+              <span class="work-category">WordPress</span>
+              <div class="work-overlay">
+                <span class="work-view">VIEW →</span>
+              </div>
+            </div>
+            <div class="work-card-body">
+              <h3 class="work-title">整体院 WordPressサイト</h3>
+              <div class="work-tags">
+                <span>WordPress</span><span>PHP</span><span>CSS</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="works-more reveal-up">
+          <a href="works.html" class="btn btn--outline magnetic">
+            <span class="btn-text">すべての実績を見る</span>
+            <span class="btn-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICE ===== -->
+    <section class="service section" id="service">
+      <div class="service-bg-shape"></div>
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">SERVICE</span>
+          <h2 class="section-title">サービス内容</h2>
+          <p class="section-desc">個人・小規模事業者様向けのWebサービス</p>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-card reveal-up" data-delay="0">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                <rect x="3" y="3" width="18" height="18" rx="2.5"/>
+                <path d="M3 9h18M9 21V9"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">ホームページ制作</h3>
+            <p class="service-card-desc">ビジネスの顔となる高品質なWebサイトを0から制作します。デザインからコーディングまで一貫対応。</p>
+            <div class="service-card-price">
+              <span class="price-from">from</span>
+              <span class="price-num">¥50,000</span>
+            </div>
+          </div>
+
+          <div class="service-card service-card--featured reveal-up" data-delay="100">
+            <div class="service-card-badge">人気 No.1</div>
+            <div class="service-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">LP制作</h3>
+            <p class="service-card-desc">コンバージョンを最大化する効果的なランディングページを制作。モニター価格でお得に依頼可能。</p>
+            <div class="service-card-price">
+              <span class="price-from">from</span>
+              <span class="price-num">¥30,000</span>
+              <span class="price-note">（モニター）</span>
+            </div>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="200">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                <path d="M1 4v6h6M23 20v-6h-6"/>
+                <path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">サイトリニューアル</h3>
+            <p class="service-card-desc">古くなったWebサイトをモダンにリニューアル。表示速度・SEO・デザインを一新します。</p>
+            <div class="service-card-price">
+              <span class="price-from">from</span>
+              <span class="price-num">¥50,000</span>
+            </div>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="300">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">大規模サイト制作</h3>
+            <p class="service-card-desc">ECサイト・多ページ構成など複雑なWebサイトも対応。高度な機能実装も可能です。</p>
+            <div class="service-card-price">
+              <span class="price-from">from</span>
+              <span class="price-num">¥100,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">PRICE</span>
+          <h2 class="section-title">料金プラン</h2>
+          <p class="section-desc">明確な料金体系でご提供します。追加費用は一切ありません。</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card pricing-card--monitor reveal-up" data-delay="0">
+            <div class="pricing-label">先着3名限定</div>
+            <div class="pricing-icon">⚡</div>
+            <h3 class="pricing-name">モニター価格</h3>
+            <div class="pricing-amount">
+              <span class="price-yen">¥</span>
+              <span class="price-value">30,000</span>
+            </div>
+            <ul class="pricing-list">
+              <li>オリジナルデザイン</li>
+              <li>レスポンシブ対応</li>
+              <li>1ヶ月無料サポート</li>
+              <li>修正3回まで無料</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary magnetic pricing-btn">申し込む</a>
+          </div>
+
+          <div class="pricing-card reveal-up" data-delay="100">
+            <div class="pricing-icon">🌐</div>
+            <h3 class="pricing-name">通常サイト</h3>
+            <div class="pricing-amount">
+              <span class="price-yen">¥</span>
+              <span class="price-value">50,000</span>
+            </div>
+            <ul class="pricing-list">
+              <li>オリジナルデザイン</li>
+              <li>レスポンシブ対応</li>
+              <li>SEO基本設定</li>
+              <li>3ヶ月無料サポート</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost magnetic pricing-btn">申し込む</a>
+          </div>
+
+          <div class="pricing-card reveal-up" data-delay="200">
+            <div class="pricing-icon">🚀</div>
+            <h3 class="pricing-name">大規模サイト</h3>
+            <div class="pricing-amount">
+              <span class="price-yen">¥</span>
+              <span class="price-value">100,000</span>
+            </div>
+            <ul class="pricing-list">
+              <li>フルカスタムデザイン</li>
+              <li>多ページ構成</li>
+              <li>高度な機能実装</li>
+              <li>6ヶ月無料サポート</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost magnetic pricing-btn">申し込む</a>
+          </div>
+
+          <div class="pricing-card reveal-up" data-delay="300">
+            <div class="pricing-icon">🔄</div>
+            <h3 class="pricing-name">サイトリニューアル</h3>
+            <div class="pricing-amount">
+              <span class="price-yen">¥</span>
+              <span class="price-value">50,000</span>
+            </div>
+            <ul class="pricing-list">
+              <li>既存コンテンツ移行</li>
+              <li>モダンデザイン刷新</li>
+              <li>表示速度・SEO改善</li>
+              <li>3ヶ月無料サポート</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost magnetic pricing-btn">申し込む</a>
+          </div>
+        </div>
+
+        <p class="pricing-note reveal-up">※すべてのプランに無料相談・お見積もりが含まれます</p>
+      </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner">
+      <div class="cta-banner-bg"></div>
+      <div class="container">
+        <div class="cta-banner-inner reveal-up">
+          <p class="cta-sub">まずはお気軽にどうぞ</p>
+          <h2 class="cta-heading">一緒に<em>最高の</em>サイトを<br>作りませんか？</h2>
+          <p class="cta-desc">相談・お見積もりは完全無料です。<br>LINEやDMでも気軽にご連絡ください。</p>
+          <a href="contact.html" class="btn btn--white btn--lg magnetic">
+            <span class="btn-text">無料で相談する</span>
+            <span class="btn-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">CONTACT</span>
+          <h2 class="section-title">お問い合わせ</h2>
+          <p class="section-desc">相談ベースでも構いません。お気軽にご連絡ください。</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="contact-info-label">Email</p>
+                <p class="contact-info-value">haruto@example.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </div>
+              <div>
+                <p class="contact-info-label">X (Twitter)</p>
+                <p class="contact-info-value">@haruto_web</p>
+              </div>
+            </div>
+            <p class="contact-info-note">
+              X(Twitter)のDMからのご連絡も大歓迎です。<br>
+              お気軽にメッセージをお送りください！
+            </p>
+          </div>
+
+          <form class="contact-form reveal-right" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname" class="form-label">お名前 <span class="required">*</span></label>
+                <input type="text" id="fname" name="name" class="form-input" placeholder="山田 太郎" required>
+              </div>
+              <div class="form-group">
+                <label for="femail" class="form-label">メールアドレス <span class="required">*</span></label>
+                <input type="email" id="femail" name="email" class="form-input" placeholder="example@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ftype" class="form-label">ご依頼内容</label>
+              <select id="ftype" name="type" class="form-input form-select">
+                <option value="">選択してください</option>
+                <option value="monitor">モニター価格（¥30,000）先着3名</option>
+                <option value="standard">通常サイト（¥50,000）</option>
+                <option value="large">大規模サイト（¥100,000）</option>
+                <option value="renewal">サイトリニューアル（¥50,000）</option>
+                <option value="other">その他・ご相談</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fmessage" class="form-label">メッセージ <span class="required">*</span></label>
+              <textarea id="fmessage" name="message" class="form-input form-textarea" rows="5" placeholder="ご要望・ご質問などお気軽にどうぞ" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full magnetic">
+              <span class="btn-text">送信する</span>
+              <span class="btn-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="トップへ戻る">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </a>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">HARUTO</span>
+          </a>
+          <p class="footer-brand-sub">佐藤 陽翔 / Sato Haruto</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">TOP</a>
+          <a href="works.html">WORKS</a>
+          <a href="service.html">SERVICE</a>
+          <a href="skill.html">SKILL</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="#" aria-label="X (Twitter)" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="GitHub" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sato Haruto. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

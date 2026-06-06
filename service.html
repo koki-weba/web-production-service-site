@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="佐藤陽翔のWebサイト制作サービス。ホームページ制作・LP・WordPress・リニューアルに対応。">
+  <title>SERVICE | HARUTO Web Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-bg"></div>
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="loader-logo-text">HARUTO</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-percent" id="loaderPercent">0%</p>
+    </div>
+  </div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-text">HARUTO</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html"   class="nav-link">TOP</a></li>
+          <li><a href="works.html"   class="nav-link">WORKS</a></li>
+          <li><a href="service.html" class="nav-link is-active">SERVICE</a></li>
+          <li><a href="skill.html"   class="nav-link">SKILL</a></li>
+          <li><a href="contact.html" class="nav-link nav-link--contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html"   class="mobile-nav-link">TOP</a></li>
+      <li><a href="works.html"   class="mobile-nav-link">WORKS</a></li>
+      <li><a href="service.html" class="mobile-nav-link">SERVICE</a></li>
+      <li><a href="skill.html"   class="mobile-nav-link">SKILL</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="page-hero-geo"></div>
+      <div class="container">
+        <div class="page-hero-inner">
+          <p class="breadcrumb" id="breadcrumb">
+            <a href="index.html">TOP</a>
+            <span class="breadcrumb-sep">/</span>
+            <span class="breadcrumb-current">SERVICE</span>
+          </p>
+          <span class="page-hero-label">SERVICE</span>
+          <h1 class="page-hero-title">
+            <span class="page-hero-word" id="heroWord1">サービス</span>
+            <span class="page-hero-word page-hero-word--stroke" id="heroWord2">内容</span>
+          </h1>
+          <p class="page-hero-desc" id="heroDesc">
+            個人店舗・小規模事業者様を対象に、<br>
+            デザインから公開・サポートまで一貫してお任せいただけます。
+          </p>
+        </div>
+      </div>
+      <div class="page-hero-divider"></div>
+    </section>
+
+    <!-- ===== SERVICES DETAIL ===== -->
+    <section class="section" style="background:var(--white);">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">SERVICE</span>
+          <h2 class="section-title">提供サービス</h2>
+          <p class="section-desc">お客様のニーズに合わせた4つのサービスをご提供しています</p>
+        </div>
+
+        <div class="service-detail-grid">
+          <div class="service-detail-card service-detail-card--featured reveal-up">
+            <p class="service-detail-num">SERVICE 01</p>
+            <div class="service-detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                <rect x="3" y="3" width="18" height="18" rx="2.5"/>
+                <path d="M3 9h18M9 21V9"/>
+              </svg>
+            </div>
+            <h3 class="service-detail-title">ホームページ制作</h3>
+            <p class="service-detail-desc">
+              ビジネスの顔となる高品質なWebサイトを0から制作します。
+              ヒアリングを徹底的に行い、お客様の想いとビジネス目標を形にします。
+              デザインからコーディング、公開まで一貫してお任せいただけます。
+            </p>
+            <ul class="service-detail-list">
+              <li>オリジナルデザイン（Figmaでモックアップ作成）</li>
+              <li>スマホ・タブレット対応（レスポンシブデザイン）</li>
+              <li>問い合わせフォーム・Googleマップ設置</li>
+              <li>SEO基本設定（メタタグ・OGP・構造化データ）</li>
+              <li>表示速度最適化（PageSpeed Insights対応）</li>
+            </ul>
+            <div class="service-detail-price-row">
+              <span class="service-detail-price-label">料金</span>
+              <span class="service-detail-price-val">¥50,000〜</span>
+            </div>
+          </div>
+
+          <div class="service-detail-card reveal-up" data-delay="0">
+            <p class="service-detail-num">SERVICE 02</p>
+            <div class="service-detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 class="service-detail-title">LP制作</h3>
+            <p class="service-detail-desc">
+              コンバージョン（問い合わせ・購入・予約）を最大化するランディングページを制作します。
+              先着3名様はモニター価格で承ります。
+            </p>
+            <ul class="service-detail-list">
+              <li>コンバージョン設計・CTA最適化</li>
+              <li>スクロールアニメーションで訴求力UP</li>
+              <li>A/Bテスト対応レイアウト</li>
+              <li>SNS・広告との連携設計</li>
+            </ul>
+            <div class="service-detail-price-row">
+              <span class="service-detail-price-label">料金</span>
+              <span class="service-detail-price-val">¥30,000〜</span>
+            </div>
+          </div>
+
+          <div class="service-detail-card reveal-up" data-delay="100">
+            <p class="service-detail-num">SERVICE 03</p>
+            <div class="service-detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                <path d="M1 4v6h6M23 20v-6h-6"/>
+                <path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15"/>
+              </svg>
+            </div>
+            <h3 class="service-detail-title">サイトリニューアル</h3>
+            <p class="service-detail-desc">
+              古くなったWebサイトをモダンにリニューアルします。
+              既存コンテンツを引き継ぎつつ、デザイン・速度・SEOを一新します。
+            </p>
+            <ul class="service-detail-list">
+              <li>既存コンテンツ・画像の移行対応</li>
+              <li>デザイン全面刷新</li>
+              <li>表示速度・Core Web Vitals改善</li>
+              <li>SSLの設定・セキュリティ強化</li>
+            </ul>
+            <div class="service-detail-price-row">
+              <span class="service-detail-price-label">料金</span>
+              <span class="service-detail-price-val">¥50,000〜</span>
+            </div>
+          </div>
+
+          <div class="service-detail-card reveal-up" data-delay="200">
+            <p class="service-detail-num">SERVICE 04</p>
+            <div class="service-detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+              </svg>
+            </div>
+            <h3 class="service-detail-title">大規模サイト制作</h3>
+            <p class="service-detail-desc">
+              ECサイト・多ページ構成など、より複雑なWebサイトにも対応します。
+              要件定義から設計・実装・テストまで一貫して担当します。
+            </p>
+            <ul class="service-detail-list">
+              <li>10ページ以上の大規模構成</li>
+              <li>ECサイト（決済連携）</li>
+              <li>WordPress/CMS導入</li>
+              <li>詳細なSEO戦略・分析設定</li>
+            </ul>
+            <div class="service-detail-price-row">
+              <span class="service-detail-price-label">料金</span>
+              <span class="service-detail-price-val">¥100,000〜</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="section service-process" style="background:var(--bg-alt);">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">FLOW</span>
+          <h2 class="section-title">制作の流れ</h2>
+          <p class="section-desc">お問い合わせから納品まで、丁寧にサポートします</p>
+        </div>
+
+        <div class="process-flow reveal-up">
+          <div class="process-step">
+            <div class="process-step-num">01</div>
+            <h3 class="process-step-title">お問い合わせ<br>ヒアリング</h3>
+            <p class="process-step-desc">まずはお気軽にご相談ください。ご要望・目的・予算をお聞きします。</p>
+            <span class="process-step-arrow">›</span>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">02</div>
+            <h3 class="process-step-title">提案・<br>お見積もり</h3>
+            <p class="process-step-desc">ヒアリング内容をもとに、最適なプランと費用をご提案します。</p>
+            <span class="process-step-arrow">›</span>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">03</div>
+            <h3 class="process-step-title">デザイン<br>制作・確認</h3>
+            <p class="process-step-desc">Figmaでデザインモックを作成。2回まで無料で修正対応します。</p>
+            <span class="process-step-arrow">›</span>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">04</div>
+            <h3 class="process-step-title">コーディング<br>実装</h3>
+            <p class="process-step-desc">承認いただいたデザインを丁寧にコーディング。動作確認も徹底します。</p>
+            <span class="process-step-arrow">›</span>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">05</div>
+            <h3 class="process-step-title">納品・<br>アフターサポート</h3>
+            <p class="process-step-desc">公開後も無料サポート期間中は修正・相談に対応します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="pricing section" style="background:var(--white);">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">PRICE</span>
+          <h2 class="section-title">料金プラン</h2>
+          <p class="section-desc">追加費用なし。明確な料金体系でご提供します。</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card pricing-card--monitor reveal-up" data-delay="0">
+            <div class="pricing-label">先着3名限定</div>
+            <div class="pricing-icon">⚡</div>
+            <h3 class="pricing-name">モニター価格</h3>
+            <div class="pricing-amount">
+              <span class="price-yen">¥</span>
+              <span class="price-value">30,000</span>
+            </div>
+            <ul class="pricing-list">
+              <li>オリジナルデザイン</li>
+              <li>レスポンシブ対応</li>
+              <li>1ヶ月無料サポート</li>
+              <li>修正3回まで無料</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary magnetic pricing-btn">申し込む</a>
+          </div>
+          <div class="pricing-card reveal-up" data-delay="100">
+            <div class="pricing-icon">🌐</div>
+            <h3 class="pricing-name">通常サイト</h3>
+            <div class="pricing-amount">
+              <span class="price-yen">¥</span>
+              <span class="price-value">50,000</span>
+            </div>
+            <ul class="pricing-list">
+              <li>オリジナルデザイン</li>
+              <li>レスポンシブ対応</li>
+              <li>SEO基本設定</li>
+              <li>3ヶ月無料サポート</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost magnetic pricing-btn">申し込む</a>
+          </div>
+          <div class="pricing-card reveal-up" data-delay="200">
+            <div class="pricing-icon">🚀</div>
+            <h3 class="pricing-name">大規模サイト</h3>
+            <div class="pricing-amount">
+              <span class="price-yen">¥</span>
+              <span class="price-value">100,000</span>
+            </div>
+            <ul class="pricing-list">
+              <li>フルカスタムデザイン</li>
+              <li>多ページ構成</li>
+              <li>高度な機能実装</li>
+              <li>6ヶ月無料サポート</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost magnetic pricing-btn">申し込む</a>
+          </div>
+          <div class="pricing-card reveal-up" data-delay="300">
+            <div class="pricing-icon">🔄</div>
+            <h3 class="pricing-name">リニューアル</h3>
+            <div class="pricing-amount">
+              <span class="price-yen">¥</span>
+              <span class="price-value">50,000</span>
+            </div>
+            <ul class="pricing-list">
+              <li>コンテンツ移行</li>
+              <li>デザイン刷新</li>
+              <li>速度・SEO改善</li>
+              <li>3ヶ月無料サポート</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost magnetic pricing-btn">申し込む</a>
+          </div>
+        </div>
+        <p class="pricing-note reveal-up">※すべて税込価格です。ご予算に応じてご相談可能です。</p>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section service-faq" style="background:var(--bg-alt);">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">よくある質問</h2>
+          <p class="section-desc">お客様からよくいただくご質問をまとめました</p>
+        </div>
+
+        <div class="faq-list reveal-up" id="faqList">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-question-text">Q. 制作期間はどれくらいかかりますか？</span>
+              <span class="faq-question-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                ページ数や内容によりますが、通常のホームページ（5〜8ページ）は<strong>2〜4週間</strong>が目安です。LPは<strong>1〜2週間</strong>程度です。お急ぎの場合はご相談ください。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-question-text">Q. 修正はどれくらいお願いできますか？</span>
+              <span class="faq-question-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                デザイン確認時は<strong>2回まで無料</strong>で修正対応します。コーディング後の細かい調整も含まれます。大幅なデザイン変更が発生した場合は別途ご相談させていただく場合があります。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-question-text">Q. 写真や文章の準備が必要ですか？</span>
+              <span class="faq-question-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                写真はご用意いただけると品質が上がりますが、フリー素材での対応も可能です。文章についても、基本的なヒアリングをもとにこちらで作成することもできます（ライティング費別途）。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-question-text">Q. 支払い方法を教えてください。</span>
+              <span class="faq-question-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                銀行振込にて対応しています。ご契約時に<strong>50%前払い、納品時に残り50%</strong>のお支払いをお願いしています。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-question-text">Q. 納品後のサポートはありますか？</span>
+              <span class="faq-question-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                プランに応じて<strong>1〜6ヶ月の無料サポート期間</strong>があります。サポート期間中は軽微な修正・更新・ご相談に無料でお応えします。期間後は月額サポート（¥5,000〜）への移行も可能です。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-question-text">Q. 札幌以外でも対応可能ですか？</span>
+              <span class="faq-question-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                はい、全国対応可能です。打ち合わせはオンライン（ZoomやGoogle Meet）にて行います。もちろん対面でのお打ち合わせも歓迎です。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-banner">
+      <div class="cta-banner-bg"></div>
+      <div class="container">
+        <div class="cta-banner-inner reveal-up">
+          <p class="cta-sub">まずはお気軽に</p>
+          <h2 class="cta-heading">一緒に<em>最高の</em>サイトを<br>作りませんか？</h2>
+          <p class="cta-desc">相談・お見積もりは完全無料です。</p>
+          <a href="contact.html" class="btn btn--white btn--lg magnetic">
+            <span class="btn-text">無料で相談する</span>
+            <span class="btn-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <a href="#" class="back-to-top" id="backToTop" aria-label="トップへ戻る">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </a>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">HARUTO</span>
+          </a>
+          <p class="footer-brand-sub">佐藤 陽翔 / Sato Haruto</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">TOP</a>
+          <a href="works.html">WORKS</a>
+          <a href="service.html">SERVICE</a>
+          <a href="skill.html">SKILL</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="#" aria-label="X (Twitter)" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="GitHub" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sato Haruto. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

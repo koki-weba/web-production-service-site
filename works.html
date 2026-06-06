@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="佐藤陽翔の制作実績。個人店舗・小規模事業者向けWebサイト制作の実績一覧。">
+  <title>WORKS | HARUTO Web Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-bg"></div>
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span class="loader-logo-text">HARUTO</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-percent" id="loaderPercent">0%</p>
+    </div>
+  </div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-text">HARUTO</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html"   class="nav-link">TOP</a></li>
+          <li><a href="works.html"   class="nav-link is-active">WORKS</a></li>
+          <li><a href="service.html" class="nav-link">SERVICE</a></li>
+          <li><a href="skill.html"   class="nav-link">SKILL</a></li>
+          <li><a href="contact.html" class="nav-link nav-link--contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html"   class="mobile-nav-link">TOP</a></li>
+      <li><a href="works.html"   class="mobile-nav-link">WORKS</a></li>
+      <li><a href="service.html" class="mobile-nav-link">SERVICE</a></li>
+      <li><a href="skill.html"   class="mobile-nav-link">SKILL</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="page-hero-geo"></div>
+      <div class="container">
+        <div class="page-hero-inner">
+          <p class="breadcrumb" id="breadcrumb">
+            <a href="index.html">TOP</a>
+            <span class="breadcrumb-sep">/</span>
+            <span class="breadcrumb-current">WORKS</span>
+          </p>
+          <span class="page-hero-label">WORKS</span>
+          <h1 class="page-hero-title">
+            <span class="page-hero-word" id="heroWord1">制作</span>
+            <span class="page-hero-word page-hero-word--stroke" id="heroWord2">実績</span>
+          </h1>
+          <p class="page-hero-desc" id="heroDesc">
+            これまでに手がけた制作物を紹介します。<br>
+            個人店舗・小規模事業者様向けのサイトを中心に制作しています。
+          </p>
+        </div>
+      </div>
+      <div class="page-hero-divider"></div>
+    </section>
+
+    <!-- ===== WORKS SECTION ===== -->
+    <section class="section" style="background:var(--bg-alt);">
+      <div class="container">
+
+        <!-- Filter -->
+        <div class="works-filter reveal-up">
+          <button class="filter-btn is-active" data-filter="all">ALL</button>
+          <button class="filter-btn" data-filter="hp">HP</button>
+          <button class="filter-btn" data-filter="lp">LP</button>
+          <button class="filter-btn" data-filter="wp">WordPress</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="works-full-grid" id="worksGrid">
+
+          <article class="work-item reveal-up" data-delay="0" data-cat="hp"
+            data-title="飲食店 コーポレートサイト"
+            data-summary="地域密着型の飲食店様のホームページ制作。メニュー、アクセス、予約フォームを実装。"
+            data-tags="HTML,CSS,JavaScript,PHP"
+            data-period="2週間"
+            data-price="¥50,000"
+            data-grad="linear-gradient(135deg,#1d4ed8,#3b82f6)">
+            <div class="work-item-thumb" style="background: linear-gradient(135deg,#1d4ed8,#3b82f6)">
+              <span class="work-item-badge">HP</span>
+              <div class="work-item-overlay">
+                <span class="work-item-overlay-btn">詳細を見る</span>
+              </div>
+            </div>
+            <div class="work-item-body">
+              <h2 class="work-item-title">飲食店 コーポレートサイト</h2>
+              <p class="work-item-summary">地域密着型の飲食店様向けHP。予約フォーム・Googleマップ連携対応。</p>
+              <div class="work-item-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-item reveal-up" data-delay="100" data-cat="lp"
+            data-title="美容室 ランディングページ"
+            data-summary="キャンペーン訴求を目的としたLP。GSAPアニメーションで高いコンバージョン率を実現。"
+            data-tags="HTML,Sass,JavaScript,GSAP"
+            data-period="10日間"
+            data-price="¥35,000"
+            data-grad="linear-gradient(135deg,#1e3a8a,#6366f1)">
+            <div class="work-item-thumb" style="background: linear-gradient(135deg,#1e3a8a,#6366f1)">
+              <span class="work-item-badge">LP</span>
+              <div class="work-item-overlay">
+                <span class="work-item-overlay-btn">詳細を見る</span>
+              </div>
+            </div>
+            <div class="work-item-body">
+              <h2 class="work-item-title">美容室 ランディングページ</h2>
+              <p class="work-item-summary">初回限定キャンペーン向けLP。GSAPを活用した印象的なアニメーションで集客力UP。</p>
+              <div class="work-item-tags">
+                <span>HTML</span><span>Sass</span><span>GSAP</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-item reveal-up" data-delay="200" data-cat="wp"
+            data-title="整体院 WordPressサイト"
+            data-summary="更新しやすいWordPressで制作。施術メニューやスタッフ紹介を管理画面から簡単に編集可能。"
+            data-tags="WordPress,PHP,CSS,JavaScript"
+            data-period="3週間"
+            data-price="¥55,000"
+            data-grad="linear-gradient(135deg,#0369a1,#38bdf8)">
+            <div class="work-item-thumb" style="background: linear-gradient(135deg,#0369a1,#38bdf8)">
+              <span class="work-item-badge">WordPress</span>
+              <div class="work-item-overlay">
+                <span class="work-item-overlay-btn">詳細を見る</span>
+              </div>
+            </div>
+            <div class="work-item-body">
+              <h2 class="work-item-title">整体院 WordPressサイト</h2>
+              <p class="work-item-summary">施術メニュー・スタッフ紹介をWordPressで管理。SEO対策も同時に実施。</p>
+              <div class="work-item-tags">
+                <span>WordPress</span><span>PHP</span><span>CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-item reveal-up" data-delay="0" data-cat="lp"
+            data-title="カフェ＆ベーカリー LP"
+            data-summary="新規オープンのカフェのオープン告知LP。雰囲気のあるデザインで来店促進。"
+            data-tags="HTML,CSS,JavaScript"
+            data-period="1週間"
+            data-price="¥30,000"
+            data-grad="linear-gradient(135deg,#1e40af,#7dd3fc)">
+            <div class="work-item-thumb" style="background: linear-gradient(135deg,#1e40af,#7dd3fc)">
+              <span class="work-item-badge">LP</span>
+              <div class="work-item-overlay">
+                <span class="work-item-overlay-btn">詳細を見る</span>
+              </div>
+            </div>
+            <div class="work-item-body">
+              <h2 class="work-item-title">カフェ＆ベーカリー LP</h2>
+              <p class="work-item-summary">新規オープン告知LP。おしゃれな雰囲気を表現したデザインで反響を獲得。</p>
+              <div class="work-item-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-item reveal-up" data-delay="100" data-cat="hp"
+            data-title="工務店 コーポレートサイト"
+            data-summary="地域の工務店様の信頼感を高めるHP。施工事例ギャラリー・問い合わせフォームを実装。"
+            data-tags="HTML,CSS,JavaScript,PHP"
+            data-period="3週間"
+            data-price="¥60,000"
+            data-grad="linear-gradient(135deg,#134e4a,#2dd4bf)">
+            <div class="work-item-thumb" style="background: linear-gradient(135deg,#134e4a,#2dd4bf)">
+              <span class="work-item-badge">HP</span>
+              <div class="work-item-overlay">
+                <span class="work-item-overlay-btn">詳細を見る</span>
+              </div>
+            </div>
+            <div class="work-item-body">
+              <h2 class="work-item-title">工務店 コーポレートサイト</h2>
+              <p class="work-item-summary">施工事例ギャラリー・問い合わせフォームを完備。ブランドイメージを向上。</p>
+              <div class="work-item-tags">
+                <span>HTML</span><span>CSS</span><span>PHP</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-item reveal-up" data-delay="200" data-cat="wp"
+            data-title="歯科クリニック WordPress"
+            data-summary="地域の歯科クリニック様向けWordPressサイト。医院情報・診療内容を分かりやすく構成。"
+            data-tags="WordPress,PHP,CSS,SEO"
+            data-period="4週間"
+            data-price="¥65,000"
+            data-grad="linear-gradient(135deg,#1e3a5f,#60a5fa)">
+            <div class="work-item-thumb" style="background: linear-gradient(135deg,#1e3a5f,#60a5fa)">
+              <span class="work-item-badge">WordPress</span>
+              <div class="work-item-overlay">
+                <span class="work-item-overlay-btn">詳細を見る</span>
+              </div>
+            </div>
+            <div class="work-item-body">
+              <h2 class="work-item-title">歯科クリニック WordPress</h2>
+              <p class="work-item-summary">診療内容・スタッフ紹介・アクセス情報を分かりやすく整理。SEO対策で検索流入UP。</p>
+              <div class="work-item-tags">
+                <span>WordPress</span><span>PHP</span><span>SEO</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-banner">
+      <div class="cta-banner-bg"></div>
+      <div class="container">
+        <div class="cta-banner-inner reveal-up">
+          <p class="cta-sub">あなたのビジネスも</p>
+          <h2 class="cta-heading">次の制作実績に<br><em>加えませんか？</em></h2>
+          <p class="cta-desc">相談・お見積もりは完全無料です。</p>
+          <a href="contact.html" class="btn btn--white btn--lg magnetic">
+            <span class="btn-text">無料で相談する</span>
+            <span class="btn-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== WORKS MODAL ===== -->
+  <div class="works-modal-backdrop" id="worksModal">
+    <div class="works-modal" id="worksModalInner">
+      <div class="works-modal-header" id="worksModalHeader">
+        <button class="works-modal-close" id="worksModalClose" aria-label="閉じる">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <div>
+          <span class="works-modal-badge" id="modalBadge">HP</span>
+          <h2 class="works-modal-title" id="modalTitle">Project Title</h2>
+        </div>
+      </div>
+      <div class="works-modal-body">
+        <div class="works-modal-meta" id="modalMeta"></div>
+        <p class="works-modal-desc" id="modalDesc"></p>
+        <div class="works-modal-tags" id="modalTags"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <a href="#" class="back-to-top" id="backToTop" aria-label="トップへ戻る">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </a>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">HARUTO</span>
+          </a>
+          <p class="footer-brand-sub">佐藤 陽翔 / Sato Haruto</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">TOP</a>
+          <a href="works.html">WORKS</a>
+          <a href="service.html">SERVICE</a>
+          <a href="skill.html">SKILL</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="#" aria-label="X (Twitter)" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="GitHub" class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sato Haruto. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>
