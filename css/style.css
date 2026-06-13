@@ -1181,6 +1181,9 @@ em { font-style: normal; }
   background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(147,197,253,0.15) 0%, transparent 70%);
 }
 .cta-banner-inner { position: relative; z-index: 1; }
+.cta-banner--compact {
+  padding: clamp(48px, 6vw, 72px) 0;
+}
 .cta-sub {
   font-family: var(--font-en);
   font-size: 12px;
