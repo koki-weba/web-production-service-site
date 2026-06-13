@@ -213,7 +213,16 @@
   align-items: flex-start;
   padding: 18px;
 }
+.work-item-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .work-item-badge {
+  position: relative;
+  z-index: 1;
   font-family: var(--font-en);
   font-size: 10px;
   font-weight: 700;
@@ -229,6 +238,7 @@
 .work-item-overlay {
   position: absolute;
   inset: 0;
+  z-index: 2;
   background: rgba(15,23,42,0.6);
   display: flex;
   align-items: center;
@@ -872,6 +882,13 @@
   font-size: 14px;
   font-weight: 700;
   color: var(--text);
+}
+.contact-method-value a {
+  color: inherit;
+  text-decoration: none;
+}
+.contact-method-value a:hover {
+  color: var(--primary);
 }
 .contact-response-note {
   background: var(--bg-alt);

@@ -410,23 +410,40 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   // Inner pages load pages.js which handles full form validation
   if (!form || document.querySelector('.page-hero')) return;
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
-    const originalText = btn.querySelector('.btn-text').textContent;
-    btn.querySelector('.btn-text').textContent = '送信中...';
+    const btnText = btn.querySelector('.btn-text');
+    const originalText = btnText.textContent;
+
+    btnText.textContent = '送信中...';
     btn.disabled = true;
 
-    setTimeout(() => {
-      btn.querySelector('.btn-text').textContent = '送信完了！ありがとうございます';
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
+      if (!res.ok) throw new Error();
+
+      btnText.textContent = '送信完了！ありがとうございます';
       btn.style.background = '#16a34a';
+      form.reset();
       setTimeout(() => {
-        btn.querySelector('.btn-text').textContent = originalText;
+        btnText.textContent = originalText;
         btn.style.background = '';
         btn.disabled = false;
-        form.reset();
       }, 3000);
-    }, 1200);
+    } catch {
+      btnText.textContent = '送信に失敗しました。もう一度お試しください';
+      btn.style.background = '#dc2626';
+      btn.disabled = false;
+      setTimeout(() => {
+        btnText.textContent = originalText;
+        btn.style.background = '';
+      }, 3000);
+    }
   });
 })();
 

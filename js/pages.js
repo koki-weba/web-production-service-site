@@ -93,11 +93,23 @@
   if (!backdrop) return;
 
   document.querySelectorAll('.work-item').forEach(item => {
+    const url = item.dataset.url;
+
     item.querySelector('.work-item-overlay-btn')?.addEventListener('click', e => {
       e.stopPropagation();
+      if (url) {
+        window.open(url, '_blank', 'noopener,noreferrer');
+        return;
+      }
       openModal(item);
     });
-    item.addEventListener('click', () => openModal(item));
+    item.addEventListener('click', () => {
+      if (url) {
+        window.open(url, '_blank', 'noopener,noreferrer');
+        return;
+      }
+      openModal(item);
+    });
   });
 
   function openModal(item) {
@@ -261,13 +273,14 @@
     });
   });
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
 
     // Basic validation
     let valid = true;
     form.querySelectorAll('[required]').forEach(field => {
-      if (!field.value.trim()) {
+      const empty = field.type === 'checkbox' ? !field.checked : !field.value.trim();
+      if (empty) {
         field.style.borderColor = '#f87171';
         valid = false;
       } else {
@@ -284,33 +297,48 @@
       return;
     }
 
-    // Submit animation
     const btnText = submitBtn.querySelector('.btn-text');
     const originalText = btnText.textContent;
     btnText.textContent = '送信中...';
     submitBtn.disabled = true;
     gsap.to(submitBtn, { opacity: 0.7, duration: 0.2 });
 
-    setTimeout(() => {
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
+      if (!res.ok) throw new Error();
+
       gsap.to(submitBtn, { opacity: 1, duration: 0.3 });
       btnText.textContent = '✓ 送信が完了しました！';
       submitBtn.style.background = '#16a34a';
       submitBtn.style.boxShadow = '0 8px 24px rgba(22,163,74,0.3)';
+      form.reset();
+      form.querySelectorAll('.form-group').forEach(g => {
+        g.classList.remove('has-value', 'is-focused');
+      });
+      form.querySelectorAll('[required]').forEach(f => {
+        f.style.borderColor = '';
+      });
 
       setTimeout(() => {
         btnText.textContent = originalText;
         submitBtn.style.background = '';
         submitBtn.style.boxShadow = '';
         submitBtn.disabled = false;
-        form.reset();
-        form.querySelectorAll('.form-group').forEach(g => {
-          g.classList.remove('has-value', 'is-focused');
-        });
-        form.querySelectorAll('[required]').forEach(f => {
-          f.style.borderColor = '';
-        });
       }, 4000);
-    }, 1400);
+    } catch {
+      gsap.to(submitBtn, { opacity: 1, duration: 0.3 });
+      btnText.textContent = '送信に失敗しました。もう一度お試しください';
+      submitBtn.style.background = '#dc2626';
+      submitBtn.disabled = false;
+      setTimeout(() => {
+        btnText.textContent = originalText;
+        submitBtn.style.background = '';
+      }, 3000);
+    }
   });
 })();
 
